@@ -24,17 +24,18 @@ include __DIR__ . '/Models/Books.php';
 
 <body>
     <div class="container">
+        <div class="text-center"><h1>Movies and Books</h1></div>
         <div>
             <h1>Movies</h1>
             <div class='d-flex'>
                 <?php foreach ($moviesdb as $movies) {?>
                 
-                <div class="card" style="width: 18rem;">
+                <div class="card mx-2" style="width: 18rem;">
                     <img src="<?= $movies->img ?>" class="card-img-top" alt="<?= $movies->title?>">
                     <div class="card-body">
                         <h5 class="card-title"><?= $movies->title?></h5>
                         <p class="card-text"><?= $movies->desc?></p>
-                        <p class="card-text"><?= $movies->voteavg?></p>
+                        <p class="card-text fw-bold">Average vote: <?= $movies->voteavg?></p>
 
                     </div>
                 </div>
@@ -47,13 +48,13 @@ include __DIR__ . '/Models/Books.php';
             <div class='d-flex'>
                 <?php foreach ($booksdb as $books) {?>
                 
-                <div class="card" style="width: 18rem;">
+                <div class="card mx-2" style="width: 18rem;">
                     <img src="<?= $books->img ?>" class="card-img-top" alt="<?= $books->title?>">
                     <div class="card-body">
                         <h5 class="card-title"><?= $books->title?></h5>
                         <p class="card-text"><?= $books->desc?></p>
-                        <p class="card-text"><?= $books->authors?></p>
-                        <p class="card-text"><?= $books->category?></p>
+                        <p class="card-text fst-italic">Authors: <?= $books->authors?></p>
+                        <p class="card-text fw-bold">Category: <?= $books->category?></p>
 
 
                     </div>
