@@ -1,3 +1,8 @@
+<?php
+include __DIR__ . '/Models/Movie.php'
+
+
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +24,18 @@
 
 <body>
     <div class="container">
-        
+        <div>
+            <?php
+            $fast = new Movie('Fast and Furious', 100);
+            echo $fast->printMovie();
+            ?>
+        </div>
+        <div>
+            <?php
+            $bond = new Movie('007: Licenza di uccidere', 101);
+            echo $bond->printMovie();
+            ?>
+        </div>
     </div>
 </body>
 

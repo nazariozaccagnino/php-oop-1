@@ -11,8 +11,8 @@ class Movie{
     }
 };
 
-$fast = new Movie('Fast and Furious', 100);
-echo $fast->printMovie();
+//$fast = new Movie('Fast and Furious', 100);
+//echo $fast->printMovie();
 
-$bond = new Movie('007: Licenza di uccidere', 101);
-echo $bond->printMovie();
+// $bond = new Movie('007: Licenza di uccidere', 101);
+// echo $bond->printMovie();
