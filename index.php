@@ -26,15 +26,40 @@ include __DIR__ . '/Models/Books.php';
     <div class="container">
         <div>
             <h1>Movies</h1>
-            <?php
-                echo $miracworld->printMovie();
-            ?>
+            <div class='d-flex'>
+                <?php foreach ($moviesdb as $movies) {?>
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="<?= $movies->img ?>" class="card-img-top" alt="<?= $movies->title?>">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $movies->title?></h5>
+                        <p class="card-text"><?= $movies->desc?></p>
+                        <p class="card-text"><?= $movies->voteavg?></p>
+
+                    </div>
+                </div>
+                <?php }?>
+            </div>
+
         </div>
         <div>
             <h1>Books</h1>
-            <?php
-                echo $flexonjava->printBook();
-            ?>
+            <div class='d-flex'>
+                <?php foreach ($booksdb as $books) {?>
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="<?= $books->img ?>" class="card-img-top" alt="<?= $books->title?>">
+                    <div class="card-body">
+                        <h5 class="card-title"><?= $books->title?></h5>
+                        <p class="card-text"><?= $books->desc?></p>
+                        <p class="card-text"><?= $books->authors?></p>
+                        <p class="card-text"><?= $books->category?></p>
+
+
+                    </div>
+                </div>
+                <?php }?>
+            </div>
         </div>
     </div>
 </body>

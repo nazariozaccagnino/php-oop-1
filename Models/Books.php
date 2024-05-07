@@ -18,4 +18,7 @@ class Books extends Product{
 
 // $bond = new Movie('007: Licenza di uccidere', 101);
 // echo $bond->printMovie();
-$flexonjava= new Books ('Flex on Java', 'A beautifully written book that is a must have for every Java Developer', 'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg', '"Bernerd Allmon", "Jeremy Anderson"', 'Internet');
+$booksdb=[
+    new Books ('Flex on Java', 'A beautifully written book that is a must have for every Java Developer', 'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg', '"Bernerd Allmon", "Jeremy Anderson"', 'Internet'),
+    new Books ('MongoDB in Action', 'MongoDB In Action is a comprehensive guide to MongoDB for application developers. The book begins by explaining what makes MongoDB unique and describing its ideal use cases.', 'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/banker.jpg', 'Kyle Banker', 'Next Generation Databases')
+];
