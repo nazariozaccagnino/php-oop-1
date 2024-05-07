@@ -1,13 +1,13 @@
 <?php
-class Movie{
-    public $title;
-    public $id;
-    public function __construct($title, $id){
-        $this->title = $title;
-        $this->id = $id;
+include __DIR__ . '/Product.php';
+class Movie extends Product{
+    public string $voteavg;
+    public function __construct($title, $desc, $img, $voteavg){
+        $this->voteavg= $voteavg;
+        parent::__construct($title, $desc, $img);
     }
     public function printMovie(){
-        echo $this->title . ' is in the class with the id: ' . $this->id;
+        echo $this->title . ' is in the class with the vote: ' . $this->voteavg;
     }
 };
 
