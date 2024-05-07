@@ -1,8 +1,8 @@
 <?php
-include __DIR__ . '/Product.php';
+include_once __DIR__ . '/Product.php';
 class Books extends Product{
-    public array $authors;
-    public array $category;
+    public string $authors;
+    public string $category;
     public function __construct($title, $desc, $img, $authors, $category){
         $this->authors= $authors;
         $this->category= $category;
@@ -18,4 +18,4 @@ class Books extends Product{
 
 // $bond = new Movie('007: Licenza di uccidere', 101);
 // echo $bond->printMovie();
-$flexonjava= new Books ('Flex on Java', 'A beautifully written book that is a must have for every Java Developer', 'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg', ["Bernerd Allmon", "Jeremy Anderson"], ["Internet"]);
+$flexonjava= new Books ('Flex on Java', 'A beautifully written book that is a must have for every Java Developer', 'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg', '"Bernerd Allmon", "Jeremy Anderson"', 'Internet');

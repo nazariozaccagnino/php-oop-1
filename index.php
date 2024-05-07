@@ -2,9 +2,7 @@
 include __DIR__ . '/Models/Movie.php';
 include __DIR__ . '/Models/Books.php';
 
-
-
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 
