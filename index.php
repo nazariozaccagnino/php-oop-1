@@ -1,5 +1,7 @@
 <?php
-include __DIR__ . '/Models/Product.php';
+include __DIR__ . '/Models/Movie.php';
+include __DIR__ . '/Models/Books.php';
+
 
 
     ?>
@@ -24,22 +26,16 @@ include __DIR__ . '/Models/Product.php';
 
 <body>
     <div class="container">
-        <!-- <div>
+        <div>
+            <h1>Movies</h1>
             <?php
-            $fast = new Movie('Fast and Furious', 100);
-            echo $fast->printMovie();
+                echo $miracworld->printMovie();
             ?>
         </div>
         <div>
+            <h1>Books</h1>
             <?php
-            $bond = new Movie('007: Licenza di uccidere', 101);
-            echo $bond->printMovie();
-            ?>
-        </div> -->
-        <div>
-            <?php
-                $miracworld= new Movie ('Miraculous World: Paris, Tales of Shadybug and Claw Noir', 'Miraculous holders from another world appear in Paris. They come from a parallel universe where everything is reversed: the holders of Ladybug and Black Cat Miraculouses, Shadybug and Claw Noir, are the bad guys, and the holder of the Butterfly Miraculous, Hesperia, is a superhero. Ladybug and Cat Noir will have to help Hesperia counter the attacks of their evil doubles and prevent them from seizing the Butterfly\'s Miraculous. Can our heroes also help Hesperia make Shadybug and Claw Noir better people?', 'https://image.tmdb.org/t/p/w342/5Di2tovzn8lnXWxigV6xm7yrL24.jpg', '6.935');
-                echo $miracworld->title
+                echo $flexonjava->printBook();
             ?>
         </div>
     </div>
